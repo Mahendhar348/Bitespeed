@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 class server {
    connectDB= async ()=>{
-        return await mongoose.connect('mongodb://localhost:27017/Database',{
+        return await mongoose.connect('mongodb+srv://mahitagirancha:21INzoCcDpi932EL@bitespeed.56jwonq.mongodb.net/?retryWrites=true',{
             useNewUrlParser:true,
             // useUndefinedTopology:true
         });
