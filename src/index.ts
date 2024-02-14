@@ -3,9 +3,9 @@ import { server_db } from "./server/Server";
 import * as bodyParser from 'body-parser';
 import express from 'express';
 const cors = require('cors');
-const dotenv= require('dotenv').config()
+const config = require('../config');
 
-const port = process.env.PORT || 3010;
+const port = config.PORT;
 
 console.log(port)
 

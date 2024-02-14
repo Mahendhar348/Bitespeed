@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
+const config = require('../../config')
 class server {
    connectDB= async ()=>{
-        return await mongoose.connect('mongodb+srv://mahitagirancha:ZMGvmtuENS2QOtum@bitespeed.56jwonq.mongodb.net/?retryWrites=true',{
+        return await mongoose.connect(config.MONGO_URI,{
             useNewUrlParser:true,
         }).then((res:any)=>{
             console.log('Connect to DB');
